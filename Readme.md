@@ -2,6 +2,22 @@
 
 This is this landing page for TrackChangws
 
+## TODO
+
+### Landing
+ - A splash of design on the landing page.
+ -- Maybe link to chrome store with https://developer.chrome.com/webstore/branding#badge 
+
+### Promo Images
+ - Confirm Icon is suitable - https://developer.chrome.com/webstore/images?hl=en#icons
+ - Chrome Store Promotional Material
+ -- Screenshot Image - https://developer.chrome.com/webstore/images?hl=en#screenshots
+ --- 1280x800 or 640x400
+ -- Promotional images - https://developer.chrome.com/webstore/images?hl=en#promo
+ --- Small tile - 440x280
+ --- Large tile - 920x680
+ --- Marquee - 1400x560
+
 ## See it live
 
 ### Local development
@@ -14,7 +30,7 @@ This is this landing page for TrackChangws
 
 ## Setup a new environment
 
-Copy and paste the below command and you should be good to go!
+Copy and paste the below command and you should be good to go! Also consider http://pow.cx/
 
 ### Services and Libraries
 

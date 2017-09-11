@@ -1,0 +1,10 @@
+.hero {
+  @extend .text-center;
+  @extend .container;
+
+  padding: 2rem 1rem;
+
+  h1 small {
+    display: block;
+  }
+}
