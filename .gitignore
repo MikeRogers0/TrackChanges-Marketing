@@ -3,3 +3,6 @@
 .DS_Store
 .sass-cache
 build/
+.env
+log/*
+tmp/*
