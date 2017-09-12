@@ -13,6 +13,7 @@ source 'https://rubygems.org' do
 
   gem 'middleman-minify-html'
   gem 'middleman-sprockets'
+  gem 'middleman-favicon-maker', '~> 4.0', github: 'MikeRogers0/middleman-favicon-maker', branch: 'fix/favicon-path'
 
   gem 's3_website'
 

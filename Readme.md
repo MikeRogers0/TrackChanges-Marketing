@@ -35,6 +35,7 @@ Copy and paste the below command and you should be good to go! Also consider htt
 ### Services and Libraries
 
     brew install tidy-html5 phantomjs &&
+    brew install imagemagick &&
     gem install foreman &&
     gem install middleman &&
     gem install powder
