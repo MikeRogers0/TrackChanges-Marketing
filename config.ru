@@ -51,15 +51,11 @@ if ENV['RACK_ENV'] && (ENV['RACK_ENV'] == 'staging' || ENV['RACK_ENV'] == 'produ
     end
   end
 
-  use Rack::StaticCache,
-    root: 'build',
-    urls: %w[/assets /fonts /images /javascripts /stylesheets]
-
   use Rack::TryStatic,
     root: 'build',
     urls: %w[/], try: ['.html', 'index.html', '/index.html'],
     header_rules: [
-      [['png', 'jpg'], { 'Cache-Control' => 'public, max-age=31536000' }]
+      [['png', 'jpg', 'css'], { 'Cache-Control' => 'public, max-age=31536000' }]
     ]
 
   use Rack::Redirect
