@@ -10,5 +10,10 @@
 
   .video {
     margin: 2rem auto;
+    
+    iframe {
+      border: 1px solid #eee;
+      box-shadow: 2px 2px 5px #eee;
+    }
   }
 }
