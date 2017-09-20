@@ -1,0 +1,60 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+html {
+  font-size: 16px;
+  background-color: $accent-a;
+}
+
+:root {
+  font-size: calc(.35vw + 14.6px);
+}
+
+@media (min-width: 96.429em) {
+  :root {
+    font-size: 1.25rem;
+    /* limit to 20px (at a 16px default scale) */
+  }
+}
+
+body {
+  background-color: $light-grey;
+  min-height: 100%;
+  min-height: 100vh;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $font-sans;
+  color: $font-color;
+}
+
+.wrap {
+  max-width: 1800px;
+  margin: 0 auto;
+  text-align: center; //temp
+}
+
+section {padding: $space-m 0;}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid $link-color;
+
+  &:hover {
+    color: darken($link-color, 5%);
+    border-bottom: none;
+  }
+}
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $light-grey;
+}

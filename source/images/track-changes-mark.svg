@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268 194">
+	<style>.a{fill:#24AFBA;}.b{fill:#2B93D8;}</style>
+	<rect x="35.6" y="79.5" transform="matrix(0.7071 0.7071 -0.7071 0.7071 93.7408 4.8081)" width="11" height="72.2" class="a"/>
+	<path d="M13.5 166.2L1.4 154.2c-1.9-1.9-1.9-4.9 0-6.7l7.2-7.2 18.8 18.8 -7.2 7.2C18.3 168.1 15.3 168.1 13.5 166.2z" class="a"/>
+	<rect x="46.5" y="90.4" transform="matrix(0.7071 0.7071 -0.7071 0.7071 104.6224 0.3008)" width="11" height="72.2" class="a"/>
+	<polygon points="65.9 83.1 91.4 76.3 84.5 101.8 " class="a"/>
+	<rect x="112.8" y="157.1" width="42.2" height="23.2" class="a"/>
+	<rect x="98.7" y="177.8" width="70.4" height="15.5" class="b"/><polygon points="0.8 0 0.8 121.9 15.5 107.3 15.5 14.7 252.2 14.7 252.2 152.4 63.6 152.4 48.9 167.1 266.9 167.1 266.9 0 " class="b"/>
+	<rect x="32.9" y="31.4" width="200.5" height="24.1" class="b"/>
+	<rect x="112.2" y="109.7" width="121.3" height="24.1" class="b"/>
+	<rect x="112.2" y="71.1" width="121.3" height="24.1" class="a"/>
+</svg>

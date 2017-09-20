@@ -12,8 +12,12 @@
     <%= javascript_include_tag "site" %>
     <link rel="canonical" href="<%= current_url %>"/>
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/apjhnklilfgkagjmiklcffnaggponkdc">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:600,100" rel="stylesheet">
   </head>
   <body>
-    <%= yield %>
+    <div class="wrap">
+      <%= yield %>
+    </div>
   </body>
 </html>

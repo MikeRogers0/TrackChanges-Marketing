@@ -1,0 +1,38 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.full {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fit {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.center {margin: 0 auto;}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.dsk {display: none;}
+
+// Larger than tablet
+@media (#{$bp-larger-than-tablet}) {
+	.flex {flex-direction: row;}
+
+	.mb {display: none;}
+
+	.dsk {display: block;}
+}

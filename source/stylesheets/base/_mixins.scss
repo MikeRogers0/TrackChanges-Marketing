@@ -1,0 +1,8 @@
+// Mixins
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+@mixin box-shadow($color) {
+  -webkit-box-shadow: 0px 5px 10px -2px $color;
+  -moz-box-shadow:    0px 5px 10px -2px $color;
+  box-shadow:         0px 5px 10px -2px $color;
+}

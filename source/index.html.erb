@@ -1,27 +1,37 @@
-<header class="hero">
-  <h1>TrackChanges for Google Chrome™ <small>Change, Save & Share</small></h1>
-
-  <div class="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/UtCo_gN8cKg?rel=0" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc" class="btn btn-download">
-    <%= image_tag 'ChromeWebStore_Badge_v2_496x150.png', alt: 'Download in the Chrome Store', width: 248, height: 75 %>
-  </a>
+<header>
+	<div class="container">
+		<div class="logo-container">
+			<div>
+				<%= image_tag 'track-changes-mark.svg', width: 70, height: 50 %>
+			</div>
+			<div>
+				<%= image_tag 'track-changes-logo.svg', width: 123, height: 40 %>
+			</div>
+		</div>
+	</div>
 </header>
 
-<section class="summary text-center container">
-  <h2>What is TrackChanges</h2>
-  <p>TrackChanges is a Google Chrome™ extension that allows you to create a developer friendly summary of changes made using the Chrome's Inspect tool.</p>
+<section id="hero">
+	<div class="container">
+		<h1>A friendly way to update code</h1>
+		<h3>Change, save, and share code within your browser 😎</h3>
+		<a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc" class="button">Download <i class="fa fa-external-link-square" aria-hidden="true"></i></a><br /><small>currently available for Google Chrome</small>
+	</div>
 </section>
 
-<section class="text-center container">
-  <a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc" class="btn btn-download">
-    <%#= image_tag 'ChromeWebStore_Badge_v2_496x150.png', alt: 'Download in the Chrome Store', width: 248, height: 75 %>
-  </a>
+<section id="video">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/UtCo_gN8cKg?rel=0" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<footer class="credits">
-  <p>TrackChanges was created by <a href="https://mikerogers.io/">Mike Rogers</a>, landing page master crafted by <a href="#">[Your Link Here]</a>.</p>
-  <p>© 2017 <a href="https://mikerogers.io/">Mike Rogers</a></p>
+<div class="container">
+	<section id="#details">
+		<p>TrackChanges is a Google Chrome™ extension that allows you to create a developer friendly summary of changes made using the Chrome's Inspect tool.</p>
+	</section>
+</div>
+
+<footer>
+	<div class="container">
+		<p>TrackChanges was created by <a href="https://mikerogers.io/">Mike Rogers</a>. The landing page was created by <a href="https://sarahb.co">Sarah Ball</a>.</p>
+		<p>© 2017 <a href="https://mikerogers.io/">Mike Rogers</a></p>
+	</div>
 </footer>
