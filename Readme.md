@@ -14,15 +14,15 @@ This is this landing page for TrackChangws
  -- Screenshot Image - https://developer.chrome.com/webstore/images?hl=en#screenshots
  --- 1280x800 or 640x400
  -- Promotional images - https://developer.chrome.com/webstore/images?hl=en#promo
- --- Small tile - 440x280
- --- Large tile - 920x680
- --- Marquee - 1400x560
+ --- Small tile - 440x280 - TODO
+ --- Large tile - 920x680 - Done
+ --- Marquee - 1400x560 - Done
 
 ## See it live
 
 ### Local development
 
-  http://trackchanges-marketing.dev/
+  https://trackchanges-marketing.localhost/
 
 ### Production
   
@@ -30,11 +30,12 @@ This is this landing page for TrackChangws
 
 ## Setup a new environment
 
-Copy and paste the below command and you should be good to go! Also consider http://pow.cx/
+Copy and paste the below command and you should be good to go! Also consider [Puma-dev](https://gist.github.com/MikeRogers0/29ad917e3e34bb8af403f161e78af233).
 
 ### Services and Libraries
 
     brew install tidy-html5 phantomjs &&
+    brew install memcached &&
     brew install imagemagick &&
     gem install foreman &&
     gem install middleman &&
@@ -46,7 +47,7 @@ Copy and paste the below command and you should be good to go! Also consider htt
     git clone git@github.com:MikeRogers0/TrackChanges-Marketing.git &&
     cd TrackChanges-Marketing &&
     bundle &&
-    powder link TrackChanges-Marketing &&
+    puma-dev link &&
     powder open
 
 ## Running the website locally
@@ -55,6 +56,6 @@ In terminal run:
 
     middleman server
 
-The navigate to the outputted domain. Alternatively setup using http://pow.cx/ and visit
+The navigate to the outputted domain. Alternatively setup using [Puma-dev](https://gist.github.com/MikeRogers0/29ad917e3e34bb8af403f161e78af233) and visit:
 
-    http://trackchanges-marketing.dev/
+    https://trackchanges-marketing.localhost/
