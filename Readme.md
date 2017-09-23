@@ -47,7 +47,7 @@ Copy and paste the below command and you should be good to go! Also consider [Pu
     git clone git@github.com:MikeRogers0/TrackChanges-Marketing.git &&
     cd TrackChanges-Marketing &&
     bundle &&
-    puma-dev link &&
+    puma-dev link -n TrackChanges-Marketing &&
     powder open
 
 ## Running the website locally
