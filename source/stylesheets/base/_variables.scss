@@ -6,36 +6,38 @@ $bp-larger-than-mobile    : "min-width: 400px" !default;
 $bp-larger-than-phablet   : "min-width: 550px" !default;
 $bp-larger-than-tablet    : "min-width: 750px" !default;
 $bp-larger-than-desktop   : "min-width: 1000px" !default;
-$bp-larger-than-desktophd : "min-width: 1200px" !default;
-
-// Defaults
-$white: #fefefe !default;
-$light-grey: #e5eff5 !default;
-$mid-grey: #738a94 !default;
-$dark-grey: #343f44 !default;
-
-// Brand
-$blue: #2B93D8 !default;
-$green: #24AFBA !default;
+$bp-larger-than-desktophd : "min-width: 1400px" !default;
 
 // Palette
-$primary-color: $blue !default;
-$secondary-color: $green !default;
-$accent-a: lighten($primary-color, 0.5) !default;
+$slate-blue: #23455b !default;
+$purple-blue: #6922ca !default;
+$purpley: #9a58de !default;
+$yellow-green: #b0ff82 !default;
+$white: #f1f1f1 !default;
 
-$border-color: $primary-color !default;
-$link-color: $primary-color !default;
-$font-color: $dark-grey !default;
+// Brand
+$brand-blue: #2B93D8 !default;
+$brand-green: #24AFBA !default;
+
+// Colors
+$primary-color: $slate-blue !default;
+$secondary-color: $purple-blue !default;
+$accent-a: $purpley !default;
+$accent-b: $yellow-green !default;
+$border-color: $secondary-color !default;
+$background-color: rgba($yellow-green, 0.5) !default;
+$link-color: $secondary-color !default;
+$font-color: $primary-color !default;
 
 // Typography
-$font-heading: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Roboto", "Droid Sans", "Ubuntu", sans-serif !default;
+$font-heading: "Hammersmith One", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-body: -apple-system, BlinkMacSystemFont, "Open Sans", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Roboto", "Droid Sans", "Ubuntu", sans-serif !default;
 
 
 //Grid Variables
-$container-width: 960px !default;
-$container-width-larger-than-mobile: 85% !default;
-$container-width-larger-than-phablet: 80% !default;
+$container-width: 1200px !default;
+$container-width-small: 85% !default;
+$container-width-medium: 80% !default;
 $total-columns: 12 !default;
 $column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
 $column-margin: 4% !default; // space between columns
@@ -46,4 +48,4 @@ $space-m: 45px !default;
 $space-l: 90px !default;
 
 // Misc
-$global-radius: 3px !default;
+$global-radius: 0 !default;
