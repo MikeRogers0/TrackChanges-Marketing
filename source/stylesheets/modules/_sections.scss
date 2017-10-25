@@ -66,8 +66,26 @@ svg {@extend .fit;}
 
 .arrow-2b {display: none;}
 
+/* Dividers */
+.divider-1,
+.divider-2 {
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 50px;
+}
+
+.divider-1 {
+  background: url(/images/divider-1.svg);
+}
+
+.divider-2 {
+  background: url(/images/divider-2.svg);
+}
+
 /* Footer */
 footer {
+	background-color: $purple-blue;
 }
 
 // Larger than phablet
