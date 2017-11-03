@@ -37,6 +37,7 @@ section {padding: $space-m 0;}
 
 a {
   color: $link-color;
+  @include transition(color $transition);
 
   &:hover {
     color: darken($link-color, 25%);

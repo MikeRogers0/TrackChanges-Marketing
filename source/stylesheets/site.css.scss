@@ -21,55 +21,9 @@
 @import "modules/grid";
 @import "modules/buttons";
 //@import "modules/forms";
-//@import "modules/lists";
+@import "modules/lists";
 //@import "modules/code";
 //@import "modules/tables";
 @import "modules/sections";
 @import "modules/spacing";
 @import "modules/media-queries";
-
-
-
-
-.wave-container {
-	min-height: 300px;
-	height: 25vh;
-	position: relative;
-}
-	.wave {
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 0;
-		bottom: 0;
-		z-index: 1;
-		overflow: hidden;
-		svg {
-			vertical-align: top;
-			margin-bottom: -5px;
-			width: 300%;
-			height: auto;
-			animation: wave 20s linear infinite;
-			* {
-				fill: $primary-color;
-			}
-		}
-	}
-
-@-webkit-keyframes wave {
-  0%   { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
-}
-@-moz-keyframes wave {
-  0%   { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
-}
-@-o-keyframes wave {
-  0%   { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
-}
-@keyframes wave {
-  0%   { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
-}
-

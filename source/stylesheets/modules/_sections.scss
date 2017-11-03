@@ -6,6 +6,10 @@
 	padding-bottom: $space-m;
 }
 
+.container-small {
+	max-width: 768px;
+}
+
 svg {@extend .fit;}
 
 /* Logo */
@@ -15,9 +19,10 @@ svg {@extend .fit;}
 	@include flexbox();
 	@include flex-direction(row);
 	@include justify-content(flex-end);
-	padding-bottom: $space-m;
+	@include align-items(flex-start);
+	margin-bottom: $space-m;
 
-	:first-child {padding-right: 5px;}
+	:first-child {margin-right: 5px;}
 }
 
 /* Hero */
@@ -73,19 +78,68 @@ svg {@extend .fit;}
   width: 100%;
   width: 100vw;
   height: 50px;
+  margin-top: 50px;
 }
 
 .divider-1 {
   background: url(/images/divider-1.svg);
+  margin-top: 100px;
 }
 
 .divider-2 {
   background: url(/images/divider-2.svg);
 }
 
+/* Video */
+#video {margin-top: -200px;}
+
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 10px solid #beffdb;
+}
+
+.video-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* How */
+
+
 /* Footer */
 footer {
-	background-color: $purple-blue;
+	background: $purple-blue; /* Old browsers */
+	background: -moz-linear-gradient(top, $purple-blue 0%, $purple-blue 40%, $purpley 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $purple-blue 0%,$purple-blue 40%,$purpley 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $purple-blue 0%,$purple-blue 40%,$purpley 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	text-align: center;
+
+	p {color: $yellow-green;}
+	a {
+		color: $yellow-green;
+
+		&:hover {
+			color: $purpley;
+		}
+	}
+}
+
+.logo-footer {
+	font-size: 0;
+	@include flexbox();
+	@include flex-direction(row);
+	@include justify-content(center);
+	@include align-items(flex-start);
+	padding-bottom: $space-s;
+
+	:first-child {margin-right: 10px;}
 }
 
 // Larger than phablet
