@@ -110,9 +110,6 @@ svg {@extend .fit;}
 	height: 100%;
 }
 
-/* How */
-
-
 /* Footer */
 footer {
 	background: $purple-blue; /* Old browsers */
@@ -129,17 +126,6 @@ footer {
 			color: $purpley;
 		}
 	}
-}
-
-.logo-footer {
-	font-size: 0;
-	@include flexbox();
-	@include flex-direction(row);
-	@include justify-content(center);
-	@include align-items(flex-start);
-	padding-bottom: $space-s;
-
-	:first-child {margin-right: 10px;}
 }
 
 // Larger than phablet
