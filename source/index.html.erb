@@ -1,37 +1,95 @@
-<header>
+<div id="hero">
 	<div class="container">
-		<div class="logo-container">
-			<div>
-				<%= image_tag 'track-changes-mark.svg', width: 70, height: 50 %>
+		<div class="logo">
+			<svg width="45px" height="33px">
+	      <use xlink:href="#mark"></use>
+	    </svg>
+			<svg width="71px" height="28px">
+	      <use xlink:href="#logo"></use>
+	    </svg>
+		</div>
+		<div class="row">
+			<h1 class="title">A friendly way to<wbr> update code</h1>
+		</div>
+		<div class="row">
+			<h2 class="subtitle">Change, save, and share code within your browser.</h2>
+		</div>
+		<button><a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc">Add to Chrome</a></button>
+		<div class="graphic">
+			<div class="step-1">
+				<svg width="250px" height="180px">
+		      <use xlink:href="#icon-1"></use>
+		    </svg>
+				<h3 class="caption">make changes</h3>
 			</div>
-			<div>
-				<%= image_tag 'track-changes-logo.svg', width: 123, height: 40 %>
+			<div class="arrow-1">
+				<svg width="65px" height="77px">
+		      <use xlink:href="#arrow-1"></use>
+		    </svg>
+			</div>
+			<div class="step-2">
+				<svg width="250px" height="178px">
+		      <use xlink:href="#icon-2"></use>
+		    </svg>
+				<h3 class="caption">create a snapshot</h3>
+			</div>
+			<div class="arrow-2a">
+				<svg width="65px" height="77px">
+		      <use xlink:href="#arrow-1"></use>
+		    </svg>
+			</div>
+			<div class="arrow-2b">
+				<svg width="133px" height="36px">
+		      <use xlink:href="#arrow-2"></use>
+		    </svg>
+			</div>
+			<div class="step-3">
+				<svg width="250px" height="165px">
+		      <use xlink:href="#icon-3"></use>
+		    </svg>
+				<h3 class="caption">save, share, and collaborate</h3>
 			</div>
 		</div>
 	</div>
-</header>
-
-<section id="hero">
-	<div class="container">
-		<h1>A friendly way to update code</h1>
-		<h3>Change, save, and share code within your browser 😎</h3>
-		<a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc" class="button">Download <i class="fa fa-external-link-square" aria-hidden="true"></i></a><br /><small>currently available for Google Chrome</small>
+	<div class="divider-1">
 	</div>
-</section>
+</div>
 
-<section id="video">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/UtCo_gN8cKg?rel=0" frameborder="0" allowfullscreen></iframe>
-</section>
+<div id="video">
+	<div class="container container-small">
+		<div class="video-wrapper">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/UtCo_gN8cKg?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+</div>
 
-<div class="container">
-	<section id="#details">
-		<p>TrackChanges is a Google Chrome™ extension that allows you to create a developer friendly summary of changes made using the Chrome's Inspect tool.</p>
-	</section>
+<div id="how">
+	<div class="container container-small">
+		<h1 class="section-title">Track the changes you make in <wbr>Chrome’s developer tools</h1>
+		<ul class="list">
+			<li>Open the developer tools in Google Chrome</li>
+			<li>Make changes to the page's HTML, CSS, or in any developer tools utilities</li>
+			<li>Go to the Track Changes tab and click "Create Snapshot" – Track Changes creates a summary of your updates</li>
+			<li>Save your changes to download and share a summary of your changes, plus before and after versions of the page</li>
+		</ul>
+		<button class="center"><a href="https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc">Try for Free</a></button>
+	</div>
+	<div class="divider-2">
+	</div>
 </div>
 
 <footer>
 	<div class="container">
-		<p>TrackChanges was created by <a href="https://mikerogers.io/">Mike Rogers</a>. The landing page was created by <a href="https://sarahb.co">Sarah Ball</a>.</p>
-		<p>© 2017 <a href="https://mikerogers.io/">Mike Rogers</a></p>
+		<p>Created by <a href="http://mikerogers.io">Mike Rogers</a>. Landing page by <a href="http://sarahb.co">Sarah Ball</a>.</p>
+		<p>Need help? <a href="mailto:me@mikerogers.io">Email Mike</a>.</p>
+		<p>© 2017 <a href="http://mikerogers.io">Mike Rogers</a>. All Rights Reserved.</p>
+			<div class="logo-footer">
+				<svg width="68px" height="49px">
+		      <use xlink:href="#mark"></use>
+		    </svg>
+				<svg width="107px" height="42px">
+		      <use xlink:href="#logo"></use>
+		    </svg>
+			</div>
 	</div>
 </footer>

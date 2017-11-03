@@ -27,15 +27,15 @@
 // For devices larger than 400px
 @media (#{$bp-larger-than-mobile}) {
   .container {
-    width: $container-width-larger-than-mobile;
+    width: $container-width-small;
     padding: 0;
   }
 }
 
-// For devices larger than 550px
-@media (#{$bp-larger-than-phablet}) {
+// For devices larger than 750px
+@media (#{$bp-larger-than-tablet}) {
   .container {
-    width: $container-width-larger-than-phablet;
+    width: $container-width-medium;
   }
   .column,
   .columns {

@@ -8,6 +8,9 @@ html {
 
 :root {
   font-size: calc(.35vw + 14.6px);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @media (min-width: 96.429em) {
@@ -18,19 +21,13 @@ html {
 }
 
 body {
-  background-color: $light-grey;
+  background-color: $white;
   min-height: 100%;
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 400;
-  font-family: $font-sans;
+  font-family: $font-body;
   color: $font-color;
-}
-
-.wrap {
-  max-width: 1800px;
-  margin: 0 auto;
-  text-align: center; //temp
 }
 
 section {padding: $space-m 0;}
@@ -40,21 +37,9 @@ section {padding: $space-m 0;}
 
 a {
   color: $link-color;
-  text-decoration: none;
-  border-bottom: 1px solid $link-color;
+  @include transition(color $transition);
 
   &:hover {
-    color: darken($link-color, 5%);
-    border-bottom: none;
+    color: darken($link-color, 25%);
   }
-}
-
-// Misc
-//––––––––––––––––––––––––––––––––––––––––––––––––––
-
-hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
-  border-width: 0;
-  border-top: 1px solid $light-grey;
 }

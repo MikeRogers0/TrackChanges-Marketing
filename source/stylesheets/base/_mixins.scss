@@ -1,8 +1,52 @@
 // Mixins
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-@mixin box-shadow($color) {
-  -webkit-box-shadow: 0px 5px 10px -2px $color;
-  -moz-box-shadow:    0px 5px 10px -2px $color;
-  box-shadow:         0px 5px 10px -2px $color;
+@mixin flexbox {
+	display:-webkit-box;
+	display:-moz-box;
+	display:-ms-flexbox;
+	display:-webkit-flex;
+	display:flex;
 }
+
+@mixin flex-direction($direction) {
+	@if $direction == column {
+		-webkit-flex-direction:vertical;
+		-moz-flex-direction:vertical;
+		-ms-flex-direction:column;
+		-webkit-flex-direction:column;
+		flex-direction:column;
+	}
+	@else {
+		-webkit-flex-direction:horizontal;
+		-moz-flex-direction:horizontal;
+		-ms-flex-direction:row;
+		-webkit-flex-direction:row;
+		flex-direction:row;
+	}
+}
+
+@mixin justify-content($justify) {
+	-webkit-justify-content: $justify;
+	-moz-justify-content: $justify;
+	-ms-justify-content: $justify;
+	justify-content: $justify;
+	-ms-flex-pack: $justify;
+}
+
+@mixin align-items($align) {
+	-webkit-box-align: $align;
+	-moz-box-align: $align;
+	-ms-flex-align: $align;
+	-webkit-align-items: $align;
+	align-items: $align;
+}
+
+@mixin transition($values...) {
+  -webkit-transition: $values;
+  -moz-transition: $values;
+  -ms-transition: $values;
+  -o-transition: $values;
+  transition: $values;
+}
+
