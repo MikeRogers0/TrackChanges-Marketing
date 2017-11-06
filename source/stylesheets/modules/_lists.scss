@@ -2,14 +2,17 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 ul {
-  //list-style: circle inside;
   list-style: none;
   margin-bottom: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
 
   li {
     clear: left;
     @include flexbox();
     @include align-items(center);
+    font-size: 1.15em;
+    line-height: 1.7;
 
     &:before {
       content: "";
@@ -59,3 +62,10 @@ li {
   margin-bottom: 1rem;
 }
 
+// Larger than tablet (also point when grid becomes active)
+@media (#{$bp-larger-than-tablet}) {
+  ul {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
