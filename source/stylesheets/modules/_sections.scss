@@ -33,7 +33,7 @@ svg {@extend .fit;}
 	background: linear-gradient(135deg, #beffdb 0%,#82eefb 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beffdb', endColorstr='#82eefb',GradientType=1 );
 
-	button {
+	.btn {
 		margin: 0 auto;
 		display: block;
 	}
@@ -131,7 +131,7 @@ footer {
 // Larger than phablet
 @media (#{$bp-larger-than-phablet}) {
 	#hero {
-		button {
+		.btn {
 			margin: 0;
 			display: inline-block;
 		}
@@ -220,3 +220,16 @@ footer {
 	}
 }
 
+#how {
+  .download-cta {
+    text-align: center;
+
+    .btn {
+      display: block;
+
+      @media (#{$bp-larger-than-phablet}) {
+        display: inline-block;
+      }
+    }
+  }
+}

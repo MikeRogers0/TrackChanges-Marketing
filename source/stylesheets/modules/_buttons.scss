@@ -1,9 +1,9 @@
 // Buttons
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
-.button,
-button {
-  display: block;
+.btn
+ {
+  display: inline-block;
   padding: 20px 25px;
   max-width: 100%;
   line-height: 1;
@@ -14,16 +14,12 @@ button {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
   @include transition(background-color $transition);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 
   &:hover {
     background-color: rgba($secondary-color, 0.1);
-  }
-
-  a {
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-
-    &:hover {color: $secondary-color;}
+    color: $secondary-color;
   }
 }
