@@ -10,7 +10,7 @@
     "RACK_ENV": {
       "required": true
     },
-    "REQUIRE-AUTH": {
+    "SERVE_STATIC": {
       "required": true
     }
   },
