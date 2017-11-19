@@ -1,11 +1,11 @@
 ruby '2.4.1'
 
 source 'https://rubygems.org' do
+  gem 'dotenv', groups: %i[development test]
+
   gem 'puma'
   gem 'rake'
   gem 'rack-contrib'
-
-  gem 'dotenv', groups: %i[development test]
 
   gem 'middleman'
   gem 'middleman-autoprefixer'
