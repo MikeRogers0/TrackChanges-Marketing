@@ -56,7 +56,7 @@ if ENV['SERVE_STATIC'] &&ENV['SERVE_STATIC'] == 'true'
     urls: %w[/], try: ['.html', 'index.html', '/index.html'],
     header_rules: [
       [:all, {
-        'X-Frame-Options' => 'SAMEORIGIN',
+        #'X-Frame-Options' => 'SAMEORIGIN',
         'X-XSS-Protection' => '1; mode=block',
         'X-Content-Type-Options' => 'nosniff',
         'Content-Security-Policy' => ENV.fetch('CONTENT_SECURITY_POLICY') { '' },
