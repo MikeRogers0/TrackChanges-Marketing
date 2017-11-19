@@ -3,6 +3,7 @@ ruby '2.4.1'
 source 'https://rubygems.org' do
   gem 'puma'
   gem 'rake'
+  gem 'rack-contrib'
 
   gem 'dotenv', groups: %i[development test]
 

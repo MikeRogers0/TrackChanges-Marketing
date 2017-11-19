@@ -147,6 +147,8 @@ GEM
     public_suffix (3.0.1)
     puma (3.10.0)
     rack (2.0.3)
+    rack-contrib (1.2.0)
+      rack (>= 0.9.1)
     rake (12.3.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
@@ -182,6 +184,7 @@ DEPENDENCIES
   middleman-minify-html!
   middleman-sprockets!
   puma!
+  rack-contrib!
   rake!
   tzinfo-data!
   wdm (~> 0.1)!
