@@ -1,9 +1,9 @@
-#!/bin/hash
+#!/bin/bash
 
 echo "Running Release Tasks"
-if [ "$S3_SYNC" == "true" ]; then 
-  echo "Sync to S3"
-  s3_website push
+if [ "$INVALIDATE_CDN_AFTER_RELEASE" == "true" ]; then 
+  echo "Invalidating CDN"
+  bundle exec middleman cdn
 fi
 
 echo "Done"

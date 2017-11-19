@@ -56,3 +56,16 @@ configure :build do
   activate :minify_javascript
   activate :asset_hash
 end
+
+activate :cdn do |cdn|
+  cdn.cloudflare = {
+    client_api_key: ENV['CLOUDFLARE_CLIENT_API_KEY'],
+    email: ENV['CLOUDFLARE_EMAIL'],
+    zone: 'mikerogers.io',
+    base_urls: [
+      'https://trackchanges.example.com',
+    ]
+  }
+  # We only run this during the release task.
+  cdn.after_build = false
+end

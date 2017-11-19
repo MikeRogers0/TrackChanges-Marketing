@@ -1,24 +1,11 @@
 # TrackChanges Marketing Website
 
-This is this landing page for TrackChangws
+This is this landing page for TrackChanges
 
 ## TODO
 
-### Landing
- - A splash of design on the landing page.
- -- Maybe link to chrome store with https://developer.chrome.com/webstore/branding#badge 
-
-### Promo Images
- - Confirm Icon is suitable - https://developer.chrome.com/webstore/images?hl=en#icons
- - Chrome Store Promotional Material
- -- Screenshot Image - https://developer.chrome.com/webstore/images?hl=en#screenshots
- --- 1280x800 or 640x400
- -- Promotional images - https://developer.chrome.com/webstore/images?hl=en#promo
- --- Small tile - 440x280 - TODO
- --- Large tile - 920x680 - Done
- --- Marquee - 1400x560 - Done
-
-## See it live
+- Structured Data
+- Extension has some finishing touches to add
 
 ### Local development
 
@@ -26,7 +13,7 @@ This is this landing page for TrackChangws
 
 ### Production
   
-  https://trackchanges.mikerogers.io/ - This relays the CDN.
+  https://trackchanges.mikerogers.io/ - This points to a CDN, that loads the site from Heroku.
 
 ## Setup a new environment
 
