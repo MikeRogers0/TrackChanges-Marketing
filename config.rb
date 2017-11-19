@@ -77,14 +77,12 @@ configure :build do
 end
 
 activate :cdn do |cdn|
-  cdn.cloudflare = {
-    client_api_key: ENV['CLOUDFLARE_CLIENT_API_KEY'],
-    email: ENV['CLOUDFLARE_EMAIL'],
-    zone: 'mikerogers.io',
-    base_urls: [
-      'https://trackchanges.example.com',
-    ]
+  cdn.cloudfront = {
+    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
+    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
+    distribution_id: ENV['AWS_CLOUDFRONT_DISTRIBUTION_ID']
   }
+
   # We only run this during the release task.
   cdn.after_build = false
 end
