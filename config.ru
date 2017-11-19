@@ -42,7 +42,7 @@ if ENV['RACK_ENV'] && (ENV['RACK_ENV'] == 'staging' || ENV['RACK_ENV'] == 'produ
 
       def call(env)
         redirects = {
-          '/download' => 'http://www.google.com/'
+          '/download' => 'https://chrome.google.com/webstore/detail/trackchanges/apjhnklilfgkagjmiklcffnaggponkdc'
         }
         req = Rack::Request.new(env)
         return redirect(redirects[req.path]) if redirects.include?(req.path)
@@ -51,11 +51,19 @@ if ENV['RACK_ENV'] && (ENV['RACK_ENV'] == 'staging' || ENV['RACK_ENV'] == 'produ
     end
   end
 
-  use Rack::TryStatic,
+   use Rack::TryStatic,
     root: 'build',
     urls: %w[/], try: ['.html', 'index.html', '/index.html'],
     header_rules: [
-      [['png', 'jpg', 'css'], { 'Cache-Control' => 'public, max-age=31536000' }]
+      [:all, {
+        'X-Frame-Options' => 'SAMEORIGIN',
+        'X-XSS-Protection' => '1; mode=block',
+        'X-Content-Type-Options' => 'nosniff',
+        'Content-Security-Policy' => ENV.fetch('CONTENT_SECURITY_POLICY') { '' },
+        'Strict-Transport-Security' => 'max-age=15552000; includeSubDomains',
+        'Referrer-Policy' => 'no-referrer-when-downgrade'
+      }],
+      [['png', 'jpg', 'js', 'css', 'svg', 'woff', 'ttf', 'eot'], { 'Cache-Control' => 'public, max-age=31536000' }]
     ]
 
   use Rack::Redirect
