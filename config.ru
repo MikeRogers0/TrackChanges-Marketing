@@ -24,7 +24,7 @@ if ENV['REQUIRE-AUTH'] && ENV['REQUIRE-AUTH'] == 'true'
 end
 
 # When in production, use the build folder.
-if ENV['SERVE_STATIC'] &&ENV['SERVE_STATIC']  == 'true'
+if ENV['SERVE_STATIC'] &&ENV['SERVE_STATIC'] == 'true'
   # Serve static files under a `build` directory:
   # - `/` will try to serve your `build/index.html` file
   # - `/foo` will try to serve `build/foo` or `build/foo.html` in that order
