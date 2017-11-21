@@ -82,12 +82,12 @@ svg {@extend .fit;}
 }
 
 .divider-1 {
-  background: url(/images/divider-1.svg);
+  background: image-url('divider-1.svg');
   margin-top: 100px;
 }
 
 .divider-2 {
-  background: url(/images/divider-2.svg);
+  background: image-url('divider-2.svg');
 }
 
 /* Video */
