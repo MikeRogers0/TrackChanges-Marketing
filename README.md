@@ -4,7 +4,6 @@ This is this landing page for TrackChanges
 
 ## TODO
 
-- Structured Data
 - Extension has some finishing touches to add
 
 ### Local development
@@ -22,10 +21,6 @@ Copy and paste the below command and you should be good to go! Also consider [Pu
 ### Services and Libraries
 
     xcode-select --install &&
-    brew install tidy-html5 phantomjs &&
-    brew install memcached &&
-    brew install imagemagick &&
-    gem install foreman &&
     gem install middleman &&
     gem install powder
 
