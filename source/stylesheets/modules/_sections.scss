@@ -28,9 +28,9 @@ svg {@extend .fit;}
 /* Hero */
 #hero {
 	background: #beffdb;
-	background: -moz-linear-gradient(-45deg, #beffdb 0%, #82eefb 100%);
-	background: -webkit-linear-gradient(-45deg, #beffdb 0%,#82eefb 100%);
-	background: linear-gradient(135deg, #beffdb 0%,#82eefb 100%);
+	background: -moz-linear-gradient(-45deg, #9cffcd 0%, #82eefb 100%);
+	background: -webkit-linear-gradient(-45deg, #9cffcd 0%,#82eefb 100%);
+	background: linear-gradient(135deg, #9cffcd 0%,#82eefb 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#beffdb', endColorstr='#82eefb',GradientType=1 );
 
 	.btn {
@@ -113,9 +113,9 @@ svg {@extend .fit;}
 /* Footer */
 footer {
 	background: $purple-blue; /* Old browsers */
-	background: -moz-linear-gradient(top, $purple-blue 0%, $purple-blue 40%, $purpley 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, $purple-blue 0%,$purple-blue 40%,$purpley 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, $purple-blue 0%,$purple-blue 40%,$purpley 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: -moz-linear-gradient(top, $purple-blue 0%, $purple-blue 40%, #8029dc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $purple-blue 0%,$purple-blue 40%,#8029dc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $purple-blue 0%,$purple-blue 40%,#8029dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	text-align: center;
 
 	p {color: $yellow-green;}
