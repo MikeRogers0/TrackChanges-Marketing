@@ -1,4 +1,4 @@
-ruby '2.4.1'
+ruby File.read('.ruby-version').chomp
 
 source 'https://rubygems.org' do
   gem 'dotenv', groups: %i[development test]
