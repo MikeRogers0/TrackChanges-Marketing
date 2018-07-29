@@ -1,0 +1,40 @@
+/*
+ * Grabbed from: https://gist.github.com/levelsio/9c531122e557da6282458bbc2a8e2aff
+ * As mentioned https://twitter.com/levelsio/status/985879093135589376
+ */
+.levelsio-by {
+  display: flex;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 1030;
+  padding: 0.5rem 0.75rem;
+  border-top-left-radius: 0.25rem;
+  border-top: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
+  background: #fff;
+  color: #212529;
+  text-decoration: none;
+  line-height: 110%;
+
+  &:hover {
+    color: #212529;
+    text-decoration: none;
+
+    .maker {
+      color: #6922ca;
+    }
+  }
+
+  img {
+    border-radius: 100%;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.5625rem;
+    margin-left: 0.5625rem;
+  }
+
+  span {
+    font-size: 0.875rem;
+  }
+}
