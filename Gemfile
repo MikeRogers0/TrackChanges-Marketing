@@ -3,7 +3,7 @@ ruby File.read('.ruby-version').chomp
 source 'https://rubygems.org' do
   gem 'dotenv'
 
-  gem 'puma'
+  gem 'puma', '~> 3.7'
   gem 'rake'
   gem 'rack-contrib'
 
@@ -22,7 +22,7 @@ source 'https://rubygems.org' do
     gem 'capistrano-bundler', '~> 1.3'
     gem 'capistrano-rbenv', '~> 2.1'
     gem 'capistrano-yarn'
-    gem 'capistrano3-puma'
+    gem 'capistrano3-puma', '~> 3.1'
     gem 'capistrano-logrotate'
   end
 end
