@@ -75,17 +75,3 @@ configure :build do
     html.preserve_patterns          = nil    # Patterns to preserve
   end
 end
-
-activate :cdn do |cdn|
-  cdn.cloudfront = {
-    access_key_id: ENV['AWS_ACCESS_KEY_ID'],
-    secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-    distribution_id: ENV['AWS_CLOUDFRONT_DISTRIBUTION_ID']
-  }
-
-  # Only invalidate HTML files.
-  cdn.filter = /\.html/i
-
-  # We only run this during the release task.
-  cdn.after_build = false
-end
